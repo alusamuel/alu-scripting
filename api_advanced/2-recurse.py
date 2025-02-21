@@ -1,32 +1,9 @@
 #!/usr/bin/python3
-"""
-Recursive Reddit Post Fetcher Module
-
-Recursively retrieves all hot posts from a subreddit using pagination.
-
-Functions:
-    recurse(subreddit, hot_list=[], after=None)
-        Recursively accumulates post titles
-"""
+"""DOC"""
 import requests
 
 def recurse(subreddit, hot_list=None, after=None):
-    """
-    Recursive hot post title collector
-    
-    Args:
-        subreddit (str): Subreddit to query
-        hot_list (list): Internal accumulation list
-        after (str): Pagination token for next page
-        
-    Returns:
-        list/None: List of post titles or None if invalid
-        
-    Notes:
-        - Implements recursive pagination handling
-        - Uses Reddit's 'after' parameter for pagination
-        - Returns None if subreddit is invalid
-    """
+    """DOC"""
     if hot_list is None:
         hot_list = []
     headers = {'User-Agent': 'MyBot/0.0.1'}

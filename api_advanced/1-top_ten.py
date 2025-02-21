@@ -1,30 +1,9 @@
 #!/usr/bin/python3
-"""
-Reddit Hot Posts Module
-
-Retrieves and displays top 10 hot posts from a subreddit.
-
-Functions:
-    top_ten(subreddit)
-        Prints titles of first 10 hot posts
-"""
+"""DOC"""
 import requests
 
 def top_ten(subreddit):
-    """
-    Display top 10 hot posts for a subreddit
-    
-    Args:
-        subreddit (str): Subreddit name to query
-        
-    Returns:
-        None: Outputs directly to stdout
-        
-    Notes:
-        - Prints None for invalid subreddits
-        - Uses Reddit's /hot.json endpoint
-        - Sets limit=10 parameter for API request
-    """
+    """DOC"""
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
     headers = {'User-Agent': 'MyBot/0.0.1'}
     params = {'limit': 10}

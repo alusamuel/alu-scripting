@@ -1,36 +1,9 @@
 #!/usr/bin/python3
-"""
-Reddit Keyword Analyzer Module
-
-Analyzes hot posts for keyword frequency using recursive pagination.
-
-Functions:
-    count_words(subreddit, word_list)
-        Counts and displays keyword frequencies
-"""
+"""DOC"""
 import requests
 
 def count_words(subreddit, word_list, counts=None, after=None, word_dict=None):
-    """
-    Recursive keyword frequency counter
-    
-    Args:
-        subreddit (str): Subreddit to analyze
-        word_list (list): Keywords to search for
-        counts (dict): Internal count accumulator
-        after (str): Pagination token
-        word_dict (dict): Normalized keyword dictionary
-        
-    Returns:
-        None: Outputs results to stdout
-        
-    Notes:
-        - Case-insensitive search
-        - Sums duplicates in word_list
-        - Sorts by frequency then alphabetically
-        - Handles punctuation in titles
-        - Silent on invalid subreddits
-    """
+    """DOC"""
     if counts is None and word_dict is None:
         word_dict = {}
         for word in word_list:
