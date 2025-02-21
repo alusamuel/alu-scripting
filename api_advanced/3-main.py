@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """
-3-main
+Reddit Keyword Analyzer Module
+
+Analyzes hot posts for keyword frequency using recursive pagination.
+
+Functions:
+    count_words(subreddit, word_list)
+        Counts and displays keyword frequencies
 """
 import sys
 

@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """
-1-top_ten
+Reddit Hot Posts Module
+
+Retrieves and displays top 10 hot posts from a subreddit.
+
+Functions:
+    top_ten(subreddit)
+        Prints titles of first 10 hot posts
 """
 import requests
 

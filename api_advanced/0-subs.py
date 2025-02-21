@@ -1,6 +1,13 @@
 #!/usr/bin/python3
 """
-0-subs
+Reddit Subscriber Counter Module
+
+Provides functionality to fetch subscriber count for a subreddit.
+Uses Reddit's API at https://www.reddit.com/dev/api/
+
+Functions:
+    number_of_subscribers(subreddit)
+        Queries Reddit API for subreddit subscriber count
 """
 import requests
 

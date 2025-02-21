@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """
-2-recurse
+Recursive Reddit Post Fetcher Module
+
+Recursively retrieves all hot posts from a subreddit using pagination.
+
+Functions:
+    recurse(subreddit, hot_list=[], after=None)
+        Recursively accumulates post titles
 """
 import requests
 
