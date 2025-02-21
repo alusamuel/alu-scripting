@@ -1,21 +1,15 @@
 #!/usr/bin/python3
 """
-Reddit Keyword Analyzer Module
-Analyzes hot posts for keyword frequency using recursive.
+function that queries the Reddit API
+parses the title of all hot articles
+prints a sorted count of given keywords
 """
 import requests
 
 
 def count_words(subreddit, word_list):
     """
-    Recursive keyword frequency counter
-    
-    Args:
-        subreddit (str): Subreddit to analyze
-        word_list (list): Keywords to search for
-        counts (dict): Internal count accumulator
-        after (str): Pagination token
-        word_dict (dict): Normalized keyword dictionary
+    Module
     """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {'User-Agent': 'myRedditScript/1.0'}
