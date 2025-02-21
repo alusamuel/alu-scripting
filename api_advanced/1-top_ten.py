@@ -11,6 +11,20 @@ Functions:
 import requests
 
 def top_ten(subreddit):
+    """
+    Display top 10 hot posts for a subreddit
+    
+    Args:
+        subreddit (str): Subreddit name to query
+        
+    Returns:
+        None: Outputs directly to stdout
+        
+    Notes:
+        - Prints None for invalid subreddits
+        - Uses Reddit's /hot.json endpoint
+        - Sets limit=10 parameter for API request
+    """
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
     headers = {'User-Agent': 'MyBot/0.0.1'}
     params = {'limit': 10}

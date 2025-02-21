@@ -11,6 +11,22 @@ Functions:
 import requests
 
 def recurse(subreddit, hot_list=None, after=None):
+    """
+    Recursive hot post title collector
+    
+    Args:
+        subreddit (str): Subreddit to query
+        hot_list (list): Internal accumulation list
+        after (str): Pagination token for next page
+        
+    Returns:
+        list/None: List of post titles or None if invalid
+        
+    Notes:
+        - Implements recursive pagination handling
+        - Uses Reddit's 'after' parameter for pagination
+        - Returns None if subreddit is invalid
+    """
     if hot_list is None:
         hot_list = []
     headers = {'User-Agent': 'MyBot/0.0.1'}
