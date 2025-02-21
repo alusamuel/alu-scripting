@@ -2,6 +2,7 @@
 """DOC"""
 import requests
 
+
 def top_ten(subreddit):
     """DOC"""
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"

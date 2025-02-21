@@ -2,6 +2,7 @@
 """DOC"""
 import requests
 
+
 def number_of_subscribers(subreddit):
     """DOC"""
     url = f"https://www.reddit.com/r/{subreddit}/about.json"

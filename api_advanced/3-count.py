@@ -2,6 +2,7 @@
 """DOC"""
 import requests
 
+
 def count_words(subreddit, word_list, counts=None, after=None, word_dict=None):
     """DOC"""
     if counts is None and word_dict is None:

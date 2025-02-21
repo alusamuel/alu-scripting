@@ -2,6 +2,7 @@
 """DOC"""
 import requests
 
+
 def recurse(subreddit, hot_list=None, after=None):
     """DOC"""
     if hot_list is None:
